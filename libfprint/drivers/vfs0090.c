@@ -117,7 +117,7 @@ void print_hex_string(char *data, int len) {
 }
 
 void print_hex(unsigned char *data, int len) {
-	print_hex_gn(data, len, 1);
+	// print_hex_gn(data, len, 1);
 }
 
 /* remove emmmeeme */
@@ -1914,20 +1914,20 @@ static int dev_activate(struct fp_img_dev *idev, enum fp_imgdev_state state)
 
 static int dev_change_state(struct fp_img_dev *idev, enum fp_imgdev_state state)
 {
-	switch(state) {
-		case IMGDEV_STATE_INACTIVE:
-			printf("State change: IMGDEV_STATE_INACTIVE\n");
-			break;
-		case IMGDEV_STATE_AWAIT_FINGER_ON:
-			printf("State change: IMGDEV_STATE_AWAIT_FINGER_ON\n");
-			break;
-		case IMGDEV_STATE_CAPTURE:
-			printf("State change: IMGDEV_STATE_CAPTURE\n");
-			break;
-		case IMGDEV_STATE_AWAIT_FINGER_OFF:
-			printf("State change: IMGDEV_STATE_AWAIT_FINGER_OFF\n");
-			break;
-	}
+	// switch(state) {
+	// 	case IMGDEV_STATE_INACTIVE:
+	// 		printf("State change: IMGDEV_STATE_INACTIVE\n");
+	// 		break;
+	// 	case IMGDEV_STATE_AWAIT_FINGER_ON:
+	// 		printf("State change: IMGDEV_STATE_AWAIT_FINGER_ON\n");
+	// 		break;
+	// 	case IMGDEV_STATE_CAPTURE:
+	// 		printf("State change: IMGDEV_STATE_CAPTURE\n");
+	// 		break;
+	// 	case IMGDEV_STATE_AWAIT_FINGER_OFF:
+	// 		printf("State change: IMGDEV_STATE_AWAIT_FINGER_OFF\n");
+	// 		break;
+	// }
 
 	return 0;
 }
